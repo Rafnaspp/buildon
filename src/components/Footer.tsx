@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Footer() {
   return (
     <footer className="bg-section-alt text-text-body border-t border-border">
@@ -6,7 +8,13 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-primary rounded mr-3"></div>
+              <Image 
+                src="/buldon.png" 
+                alt="BUILDON Logo" 
+                width={132} 
+                height={32}
+                className="mr-3"
+              />
               <h3 className="text-xl font-bold text-text-heading mb-6">About <span className="text-primary">BUILDON</span></h3>
             </div>
             <p className="text-text-secondary text-sm leading-relaxed mb-6">
@@ -98,19 +106,7 @@ export default function Footer() {
             </div>
 
             {/* Newsletter */}
-            <div className="mt-6">
-              <p className="text-text-body mb-2">Trading Updates</p>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="w-full px-4 py-3 rounded-lg bg-background border border-border text-text-heading placeholder-text-body focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent mb-4"
-                />
-                <button className="w-full bg-primary text-text-heading px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
-                  Subscribe
-                </button>
-              </div>
-            </div>
+           
           </div>
         </div>
 

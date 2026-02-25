@@ -59,24 +59,10 @@ export default function CTASection() {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button className="bg-primary text-text-heading px-8 py-4 rounded-md text-lg font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105">
-            Start Trading Partnership
-          </button>
-          <button className="border border-border text-text-heading px-8 py-4 rounded-md text-lg font-semibold hover:bg-section-alt transition-colors">
-            Download Trading Guide
-          </button>
-        </div>
+       
 
         {/* Trust Indicators */}
-        <div className="mt-16 pt-8 border-t border-gray-800">
-          <p className="text-text-secondary mb-6">Trusted by leading global companies</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            {["Global Corp", "Trade Int'l", "World Trade", "Export Plus", "Import Pro"].map((company, index) => (
-              <div key={index} className="w-24 h-8 bg-gray-700 rounded"></div>
-            ))}
-          </div>
-        </div>
+      
       </div>
     </section>
   )

@@ -4,6 +4,8 @@ import Foundation from '@/components/Foundation'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import Services from '@/components/Services'
 import Projects from '@/components/Projects'
+import ProductCategories from '@/components/ProductCategories'
+import Brands from '@/components/Brands'
 import CTASection from '@/components/CTASection'
 import Footer from '@/components/Footer'
 
@@ -15,7 +17,9 @@ export default function Home() {
       <Foundation />
       <WhyChooseUs />
       <Services />
-      <Projects />
+      <ProductCategories />
+      <Brands />
+      {/* <Projects /> */}
       <CTASection />
       <Footer />
     </main>

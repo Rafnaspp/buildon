@@ -41,7 +41,7 @@ export default function Services() {
             <span className="text-primary text-sm font-medium">Our Services</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6">
             Comprehensive
             <span className="text-primary"> Trading</span> Solutions
           </h2>
@@ -84,7 +84,7 @@ export default function Services() {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <div className="bg-section-alt rounded-2xl p-12 text-center border border-border">
             <h2 className="text-3xl md:text-4xl font-bold text-text-heading mb-4">
               Ready to Expand Your Global Trade?
@@ -101,7 +101,7 @@ export default function Services() {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

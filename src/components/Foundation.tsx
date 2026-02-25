@@ -39,12 +39,12 @@ export default function Foundation() {
       {/* Top CTA Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="bg-yellow-400 rounded-2xl p-6 text-center border border-yellow-500">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            See why <span className="text-yellow-600">5000+</span> contractors and developers chose <span className="text-yellow-600">BUILDON</span> to build their projects
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+            See why <span className="text-black">5000+</span> contractors and developers chose <span className="text-white">BUILDON</span> to build their projects
           </h2>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-            <button className="bg-yellow-600 text-black px-8 py-3 rounded-md text-lg font-semibold hover:bg-yellow-500 transition-colors flex items-center">
+            <button className="bg-white text-black px-8 py-3 rounded-md text-lg font-semibold hover:bg-yellow-500 transition-colors flex items-center">
               GET QUOTE NOW
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -52,7 +52,7 @@ export default function Foundation() {
             </button>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-text-body">
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-black">
             <div className="flex items-center">
               <svg className="w-4 h-4 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7m0 0h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -76,7 +76,7 @@ export default function Foundation() {
       {/* Our Foundation Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
             Our <span className="text-primary">Foundation</span>
           </h2>
           <p className="text-lg text-text-body max-w-2xl mx-auto">
@@ -95,7 +95,7 @@ export default function Foundation() {
               </div>
             </div>
             
-            <h3 className="text-2xl font-bold text-white mb-4 text-center">
+            <h3 className="text-2xl font-bold text-black mb-4 text-center">
               01. Our <span className="text-primary">Mission</span>
             </h3>
             
@@ -130,7 +130,7 @@ export default function Foundation() {
               </div>
             </div>
             
-            <h3 className="text-2xl font-bold text-white mb-4 text-center">
+            <h3 className="text-2xl font-bold text-black mb-4 text-center">
               02. Our <span className="text-primary">Vision</span>
             </h3>
             
@@ -159,7 +159,7 @@ export default function Foundation() {
       {/* Our Impact in Numbers */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
             Our Impact in <span className="text-primary">Numbers</span>
           </h2>
           <p className="text-lg text-text-body">

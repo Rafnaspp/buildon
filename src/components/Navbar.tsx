@@ -7,33 +7,38 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-black border-b border-gray-800">
+    <nav className="fixed top-0 w-full z-50 bg-white border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center">
-              <div className="w-8 h-8 bg-primary rounded mr-3"></div>
-              <span className="text-white text-xl font-bold">BUILDON</span>
+              <Image 
+                src="/buldon.png" 
+                alt="BUILDON Logo" 
+                width={122} 
+                height={162}
+                className="mr-3"
+              />
             </div>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a href="#home" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
+              <a href="#home" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
                 Home
               </a>
-              <a href="#about" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
+              <a href="#about" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
                 About
               </a>
-              <a href="#services" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
-                Services
+              <a href="#products" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
+                Products
               </a>
-              <a href="#projects" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
-                Case Studies
+              <a href="#gallery" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
+                Gallery
               </a>
-              <a href="#contact" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
+              <a href="#contact" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
                 Contact
               </a>
             </div>
@@ -74,11 +79,11 @@ export default function Navbar() {
             <a href="#about" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
               About
             </a>
-            <a href="#services" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
-              Services
+            <a href="#products" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
+              Products
             </a>
-            <a href="#projects" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
-              Case Studies
+            <a href="#gallery" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
+              Gallery
             </a>
             <a href="#contact" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
               Contact
