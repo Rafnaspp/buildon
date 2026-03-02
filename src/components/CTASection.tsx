@@ -2,7 +2,7 @@ export default function CTASection() {
   return (
     <section className="py-16 lg:py-24 bg-background text-text-body overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="relative absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent"></div>
       </div>
 

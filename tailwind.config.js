@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#F4A300',
+        primaryHover: '#F5A400',
         background: '#FFFFFF',
         'section-alt': '#F8F8F8',
         text: {
