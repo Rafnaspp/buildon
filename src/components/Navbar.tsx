@@ -35,12 +35,12 @@ export default function Navbar() {
               <Link href="/products" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
                 Products
               </Link>
-              <a href="#gallery" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
+              <Link href="/gallery" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
                 Gallery
-              </a>
-              <a href="#contact" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
+              </Link>
+              <Link href="/contact" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
 
