@@ -5,7 +5,7 @@ export default function ContactHero() {
         <section className="relative min-h-screen flex items-center justify-center px-6 pt-24 sm:pt-28 lg:pt-32">
             <div className="absolute inset-0">
                     <Image
-                        src="/hero.png"
+                        src="/images/hero/hero.png"
                         alt="Hero background"
                         fill
                         className="object-cover"
