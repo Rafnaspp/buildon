@@ -1,12 +1,12 @@
+import { CalendarSearch, Globe, Mail, Phone } from "lucide-react";
+
 export default function ContactHeroButton(){
     return(
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 relative z-10 mt-6  md:mt-10 w-full max-w-6xl mx-auto pb-10">
             <div className="group w-full h-[320px] p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col items-center gap-4 hover:border-yellow-400/60 transition ease-in">
-                <img 
-                src="/Call.png"
-                alt= "Call Us"
-                className="rounded-full w-12 h-12 justify-center group-hover:rotate-12 group-hover:scale-110 transition ease-linear "
-                />
+                <div className="bg-yellow-400 rounded-full w-12 h-12 flex items-center justify-center group-hover:rotate-12 transition ease-in">
+                    <Phone className="w-8 h-8" />
+                </div>
                 <h1 className="text-white pt-10     ">
                     Call Us
                 </h1>
@@ -18,11 +18,9 @@ export default function ContactHeroButton(){
                 </p>
             </div>
             <div className="group w-full h-[320px] p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col h-[320px] items-center gap-4 hover:border-yellow-400/60 transition ease-in">
-                <img 
-                src="/mail.png"
-                alt= "Mail Us"
-                className="rounded-full w-12 h-12 justify-center group-hover:rotate-12 group-hover:scale-110 transition ease-linear"
-                />
+                <div className="bg-yellow-400 rounded-full w-12 h-12 flex items-center justify-center group-hover:rotate-12 transition ease-in">
+                    <Mail className="w-9 h-9" />
+                </div>
                 <h1 className="text-white pt-10 ">
                     Email Us
                 </h1>
@@ -34,11 +32,9 @@ export default function ContactHeroButton(){
                 </p>
             </div>
             <div className="group w-full p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col h-[320px] items-center gap-4 hover:border-yellow-400/60 transition ease-in">
-                <img 
-                src="/web.png"
-                alt= "Visit Website"
-                className="rounded-full w-12 h-12 justify-center group-hover:rotate-12 group-hover:scale-110 transition ease-linear"
-                />
+                <div className="bg-yellow-400 rounded-full w-12 h-12 flex items-center justify-center group-hover:rotate-12 transition ease-in">
+                    <Globe className="w-9 h-9" />
+                </div>
                 <h1 className="text-white pt-10 ">
                     Visit Us
                 </h1>
@@ -50,11 +46,9 @@ export default function ContactHeroButton(){
                 </p>
             </div>
             <div className="group w-full p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col h-[320px] items-center gap-4 hover:border-yellow-400/60 transition ease-in">
-                <img 
-                src="/calendar.png"
-                alt= "Schedule meeting"
-                className="rounded-full w-12 h-12 justify-center group-hover:rotate-12 group-hover:scale-110 transition ease-linear"
-                />
+                <div className="bg-yellow-400 rounded-full w-12 h-12 flex items-center justify-center group-hover:rotate-12 transition ease-in">
+                    <CalendarSearch className="w-9 h-9" />
+                </div>
                 <h1 className="text-white pt-10 ">
                     Schedule Meeting
                 </h1>

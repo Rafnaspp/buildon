@@ -1,5 +1,6 @@
 'use client'
 import { galleryImages } from "@/data/gallery";
+import { LayoutGrid, List } from "lucide-react";
 interface GalleryToolbarProps { 
     type: string;
     setType: (value: string) => void;
@@ -38,8 +39,8 @@ export default function GalleryToolbar({
                         </button>
                     
                 ))}
-                <button className={`px-4 py-2 rounded-lg hidden md:block ${gridView ? 'bg-primary text-white' : 'bg-gray-200 text-gray-800'}`} onClick={()=>setGridView(true)}>Grid</button>
-                    <button className={`px-4 py-2 rounded-lg hidden md:block ${gridView ? 'bg-gray-200 text-gray-800' : 'bg-primary text-white'}`} onClick={()=>setGridView(false)}>List</button>
+                <button className={`px-4 py-2 rounded-lg hidden md:block ${gridView ? 'bg-primary text-white' : 'bg-gray-200 text-gray-800'}`} onClick={()=>setGridView(true)}><LayoutGrid /></button>
+                    <button className={`px-4 py-2 rounded-lg hidden md:block ${gridView ? 'bg-gray-200 text-gray-800' : 'bg-primary text-white'}`} onClick={()=>setGridView(false)}><List /></button>
             </div>
         </>
     )

@@ -13,7 +13,7 @@ export default function GalleryHero() {
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/80"></div>
             </div>
             <div className="relative z-10 text-center text-white px-4">
-                <h1 className="font-extrabold text-6xl mt-60 bg-gradient-to-r from-yellow-400 via-yellow-200 to-white bg-clip-text text-transparent drop-shadow-xl filter animate-gradient" style={{backgroundSize:'200% 200%'}}>Our Gallery</h1>
+                <h1 className="font-extrabold pb-4 text-6xl mt-60 bg-gradient-to-r from-yellow-400 via-yellow-200 to-white bg-clip-text text-transparent drop-shadow-xl filter animate-gradient" style={{backgroundSize:'200% 200%'}}>Our Gallery</h1>
                 <p className="mt-8 justify-center">Explore our wide range of industrial products including fasteners,
                 safety equipment, abrasives, packing materials, and professional tools.</p>
                 <a href="#gallery">

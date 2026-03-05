@@ -1,4 +1,5 @@
 'use client';
+import { Clock, Facebook, FileBadge, Globe, Headset, Instagram, Link, Mail, MapPinHouse, Phone, Truck } from "lucide-react";
 import { useState } from "react";
 interface Options {
     value:string;
@@ -95,12 +96,12 @@ export default function ContactBody(){
                         </div>
                         <div className="bg-white p-8 rounded-2xl shadow-md space-y-3">
                             <h3 className="text-xl font-semibold text-black">Our Office</h3>
-                            <h4 className="font-semibold text-black">BuiltOn Headquarters</h4>
-                            <p className="text-gray-600">Media City, Al Massaned, Sharjah</p>
-                            <p className="text-gray-600">+971 56 269 6505</p>
-                            <p className="text-gray-600">info@buildontradingllc.com</p>
-                            <a href="www.buildontradinglls.com"><p className="text-gray-600">www.buildontradingllc.com</p></a>
-                            <p className="text-gray-600">Working Hours</p>
+                            <h4 className="font-semibold text-black">Builton Headquarters</h4>
+                            <p className="text-gray-600"><MapPinHouse />Media City, Al Massaned, Sharjah</p>
+                            <p className="text-gray-600"><Phone/>+971 56 269 6505</p>
+                            <p className="text-gray-600"><Mail />info@buildontradingllc.com</p>
+                            <a href="www.buildontradinglls.com"><p className="text-gray-600"><Globe />www.buildontradingllc.com</p></a>
+                            <p className="text-gray-600"><Clock />9:00 - 17:00</p>
                             {/* Google Maps Embed */}
                             <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.1490212054373!2d55.41953117621071!3d25.29919682756029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5f64d5696e7f%3A0xe51568072150e336!2sMEDIA%20CITY!5e0!3m2!1sen!2sin!4v1772644633951!5m2!1sen!2sin" 
@@ -109,31 +110,50 @@ export default function ContactBody(){
                         </div>
                         <div className="bg-white p-8 rounded-2xl shadow-md space-y-4">
                             <h3 className="text-xl font-semibold text-black">Why Choose Buildon</h3>
-                            <div className="bg-gray-100 p-4 rounded-xl hover:border hover:border-yellow-400  hover:-translate-y-1 transition ease-in">
-                                <p className="font-semibold text-black">Quality assured</p>
-                                <p className="text-gray-500 text-sm">ISO certified material and processes</p>
+                            <div className="bg-gray-100 p-4 group rounded-xl hover:border hover:border-yellow-400  hover:-translate-y-1 transition ease-in flex items-center  space-x-4">
+                                <div className="bg-yellow-100 rounded-full w-12 h-12 flex items-center justify-center group-hover:shadow-xl transition-all ease-in">
+                                    <FileBadge className="w-7 h-7 text-yellow-600"/>
+                                </div>
+                                <div className="flex flex-col">
+                                    <p className="font-semibold text-black">Quality assured</p>
+                                    <p className="text-gray-500 text-sm">ISO certified material and processes</p>
+                                </div>
+                                
                             </div>
-                            <div className="bg-gray-100 p-4 rounded-xl hover:border hover:border-yellow-400  hover:-translate-y-1 transition ease-in">
-                                <p className="font-semibold text-black">Fast Delivery</p>
-                                <p className="text-gray-500 text-sm">Same-day delivery</p>
+                            <div className="bg-gray-100 p-4 rounded-xl group hover:border hover:border-yellow-400  hover:-translate-y-1 transition ease-in flex items-center  space-x-4">
+                                <div className="bg-yellow-100 rounded-full w-12 h-12 flex items-center justify-center group-hover:shadow-xl transition-all ease-in">
+                                    <Truck className="w-8 h-8 text-yellow-600"/> 
+                                </div>
+                                <div className="flex flex-col">
+                                    <p className="font-semibold text-black">Fast Delivery</p>
+                                    <p className="text-gray-500 text-sm">Same-day delivery</p>
+                                </div>
                             </div>
-                            <div className="bg-gray-100 p-4 rounded-xl hover:border hover:border-yellow-400  hover:-translate-y-1 transition ease-in">
-                                <p className="font-semibold text-black">24/7 support</p>
-                                <p className="text-gray-500 text-sm">Round the clock customer service</p>
+                            <div className="bg-gray-100 p-4 rounded-xl hover:border group hover:border-yellow-400  hover:-translate-y-1 transition ease-in flex items-center  space-x-4">
+                                <div className="bg-yellow-100 rounded-full w-12 h-12 flex items-center justify-center group-hover:shadow-xl transition-all ease-in">
+                                    <Headset className="w-8 h-8 text-yellow-600"/> 
+                                </div>
+                                <div className="flex flex-col">
+                                    <p className="font-semibold text-black">24/7 support</p>
+                                    <p className="text-gray-500 text-sm">Round the clock customer service</p>
+                                </div>
                             </div>
                         </div>
+                        {/*Follow us section */}
                         <div className="bg-white p-8 rounded-2xl shadow-md">
                             <h3 className="text-xl font-semibold mb-4 ">Follow Us</h3>
                             <div className="flex gap-4">
                                 <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold">
-                                    F
+                                    <Facebook />
                                 </div>
                             <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold">
-                                    I
+                                    <Instagram />
                             </div>
+                            <a href="https://www.buildontradingllc.com">
                             <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold">
-                                    W
+                                    <Globe />
                             </div>
+                            </a>
                             </div>
                         </div>
                     </div>

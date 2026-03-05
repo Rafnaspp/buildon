@@ -65,14 +65,14 @@ export default function Footer() {
                 'Hand Tools',
                 'Power Tools',
                 'Lockings & Hinges'
-].map((service) => (
+                ].map((service) => (
                 <li key={service}>
-                  <a
-                    href="#services"
+                  <Link
+                    href={`/products?category=${encodeURIComponent(service)}`}
                     className="text-text-secondary text-sm hover:text-primary transition-colors"
                   >
                     {service}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

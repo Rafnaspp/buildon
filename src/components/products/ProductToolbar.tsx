@@ -1,6 +1,6 @@
 'use client'
 import { brands ,categories} from "@/data/products";
-import { Search } from "lucide-react";
+import { Search , LayoutGrid, List } from "lucide-react";
 interface ProductsToolbarProps {
     search: string;
     setSearch: (value: string) => void;
@@ -29,12 +29,16 @@ export default function ProductsToolbar({
             {/* first row: search + filter  */}
             <div className="md:col-span-3">
                 <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
+                    <div className="relative w-full lg:w-2/3 xl:w-1/2">
+                        <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></Search>
                         <input
                             type="text"
+                            placeholder="Search"
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
-                            className="w-full lg:w-2/3 xl:w-1/2 border rounded-lg px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
+                            className="w-full pl-12 pr-4 py-4 border rounded-lg text-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition ease-in"
                         />
+                    </div>
                     <select
                         value={filterBrand}
                         onChange={(e)=>setFilterBrand(e.target.value)}
@@ -47,8 +51,8 @@ export default function ProductsToolbar({
                             </option>
                         ))}
                     </select>
-                    <button className={`px-4 py-2 rounded-lg hidden md:block ${gridView ? 'bg-primary text-white' : 'bg-gray-200 text-gray-800'}`} onClick={()=>setGridView(true)}>Grid</button>
-                    <button className={`px-4 py-2 rounded-lg hidden md:block ${gridView ? 'bg-gray-200 text-gray-800' : 'bg-primary text-white'}`} onClick={()=>setGridView(false)}>List</button>
+                    <button className={`px-3 py-2 rounded-lg hidden md:block ${gridView ? 'bg-primary text-white' : 'bg-gray-200 text-gray-800'}transition ease-in`} onClick={()=>setGridView(true)}><LayoutGrid/></button>
+                    <button className={`px-3 py-2 rounded-lg hidden md:block ${gridView ? 'bg-gray-200 text-gray-800' : 'bg-primary text-white'}`} onClick={()=>setGridView(false)}><List/></button>
                 </div>
             </div>
 
