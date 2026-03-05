@@ -1,36 +1,36 @@
 export default function Services() {
   const services = [
-    {
-      title: "Import & Export",
-      description: "Comprehensive import and export services facilitating seamless international trade across multiple product categories.",
-      features: ["Customs Clearance", "Documentation", "Compliance Management"]
-    },
-    {
-      title: "Global Sourcing",
-      description: "Strategic sourcing solutions connecting businesses with quality suppliers and manufacturers worldwide.",
-      features: ["Supplier Verification", "Price Negotiation", "Quality Control"]
-    },
-    {
-      title: "Supply Chain Management",
-      description: "End-to-end supply chain solutions optimizing logistics, inventory, and distribution processes.",
-      features: ["Logistics Planning", "Inventory Management", "Distribution Network"]
-    },
-    {
-      title: "Trading Consultancy",
-      description: "Expert consulting services for market entry strategies, trade regulations, and international business development.",
-      features: ["Market Analysis", "Risk Assessment", "Strategic Planning"]
-    },
-    {
-      title: "Warehousing & Storage",
-      description: "Secure warehousing and storage solutions with advanced inventory tracking and management systems.",
-      features: ["Climate Control", "Security Systems", "Inventory Tracking"]
-    },
-    {
-      title: "Financial Services",
-      description: "Trade finance solutions including letters of credit, payment processing, and risk management services.",
-      features: ["Letters of Credit", "Payment Processing", "Currency Exchange"]
-    }
-  ]
+  {
+    title: "Industrial Safety Equipment",
+    description: "High-quality personal protective equipment designed to ensure safety across construction and industrial environments.",
+    features: ["Safety Helmets", "Protective Gloves", "Safety Goggles & PPE"]
+  },
+  {
+    title: "Professional Power Tools",
+    description: "Reliable power tools engineered for precision, durability, and performance in demanding worksite conditions.",
+    features: ["Heavy-Duty Tools", "Industrial Equipment", "Precision Engineering"]
+  },
+  {
+    title: "Construction Supplies",
+    description: "Essential construction materials and tools supporting contractors and developers across multiple project stages.",
+    features: ["Construction Tools", "Worksite Equipment", "Durable Materials"]
+  },
+  {
+    title: "Global Product Sourcing",
+    description: "Direct sourcing of high-quality industrial products from trusted international manufacturers.",
+    features: ["Supplier Network", "Quality Verification", "Competitive Pricing"]
+  },
+  {
+    title: "Bulk Supply Solutions",
+    description: "Efficient bulk supply services tailored for contractors, distributors, and industrial buyers.",
+    features: ["Large Order Fulfillment", "Reliable Stock Availability", "Flexible Supply Options"]
+  },
+  {
+    title: "Industrial Product Distribution",
+    description: "Streamlined logistics and distribution ensuring timely delivery of industrial products across regional markets.",
+    features: ["Logistics Coordination", "Reliable Delivery", "Supply Chain Efficiency"]
+  }
+]
 
   return (
     <section id="services" className="py-16 lg:py-24 bg-background text-text-body">
@@ -38,17 +38,17 @@ export default function Services() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 bg-section-alt border border-gray-800 rounded-full mb-6">
-            <span className="text-primary text-sm font-medium">Our Services</span>
+            <span className="text-primary text-sm font-medium">Our Solutions</span>
           </div>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6">
-            Comprehensive
+            Industrial
             <span className="text-primary"> Trading</span> Solutions
           </h2>
           
           <p className="text-lg text-text-body max-w-3xl mx-auto leading-relaxed">
-            From sourcing to delivery, BUILDON offers a complete suite of trading services 
-            designed to streamline your international business operations and maximize efficiency.
+            BUILDON provides industrial safety equipment, professional tools, and construction
+             supplies designed to support contractors, engineers, and industrial operations with reliable and high-quality products.
           </p>
         </div>
 

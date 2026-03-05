@@ -1,17 +1,41 @@
 export default function Brands() {
   const brands = [
-    { name: "Brand 1", logo: "/brand1.png" },
-    { name: "Brand 2", logo: "/brand2.png" },
-    { name: "Brand 3", logo: "/brand3.png" },
-    { name: "Brand 4", logo: "/brand4.png" },
-    { name: "Brand 5", logo: "/brand5.png" },
-    { name: "Brand 6", logo: "/brand6.png" },
-    { name: "Brand 7", logo: "/brand7.png" },
-    { name: "Brand 8", logo: "/brand8.png" },
-    { name: "Brand 9", logo: "/brand9.png" },
-    { name: "Brand 10", logo: "/brand10.png" },
-    { name: "Brand 11", logo: "/brand11.png" },
-    { name: "Brand 12", logo: "/brand12.png" }
+    { name: "Dewalt", logo: "/images/brands/dewalt.png" },
+    { name: "Makita", logo: "/images/brands/makita.png" },
+    { name: "Bosch", logo: "/images/brands/bosch.png" },
+    { name: "Clarke", logo: "/images/brands/clarke.png" },
+    { name: "Geepas", logo: "/images/brands/geepas.png" },
+    { name: "Stanley", logo: "/images/brands/stanley.png" },
+    { name: "Uken", logo: "/images/brands/uken.png" },
+    { name: "Starrett", logo: "/images/brands/starret.png" },
+    { name: "Karcher", logo: "/images/brands/karcher.png" },
+    { name: "Araldite", logo: "/images/brands/araldite.png" },
+    { name: "National paints", logo: "/images/brands/national_pains.png" },
+    { name: "Pidilite", logo: "/images/brands/pidilite.png" },
+    { name: "Insize", logo: "/images/brands/dewalt.png" },
+    { name: "Mitutoyo", logo: "/images/brands/makita.png" },
+    { name: "Dormer", logo: "/images/brands/dormer.png" },
+    { name: "WD-40", logo: "/images/brands/wd-40.png" },
+    { name: "RR Kabel", logo: "/images/brands/rr_kabel.png" },
+    { name: "Scheider Electric", logo: "/images/brands/schneider.png" },
+    { name: "Andeli", logo: "/images/brands/andeli.png" },
+    { name: "Philips", logo: "/images/brands/philips.png" },
+    { name: "Gewiss", logo: "/images/brands/gewiss.png" },
+    { name: "Admore", logo: "/images/brands/admore.png" },
+    { name: "Khaleegia", logo: "/images/brands/khaleegia.png" },
+    { name: "Duracell", logo: "/images/brands/duracell.png" },
+    { name: "Groher", logo: "/images/brands/groher.png" },
+    { name: "KludiRak", logo: "/images/brands/kludirak.png" },
+    { name: "Milano", logo: "/images/brands/milano.png" },
+    { name: "Aristone", logo: "/images/brands/ariston.png" },
+    { name: "Tredex", logo: "/images/brands/tredex.png" },
+    { name: "Khads", logo: "/images/brands/khads.png" },
+    { name: "Vaultex", logo: "/images/brands/vaultex.png" },
+    { name: "Zecchin", logo: "/images/brands/zecchin.png" },
+    { name: "Honeywell", logo: "/images/brands/honeywell.png" },
+    { name: "Armstrong", logo: "/images/brands/armstrong.png" },
+    { name: "Miller", logo: "/images/brands/miller.png" },
+    { name: "Workland", logo: "/images/brands/workland.png" }
   ]
 
   return (
@@ -25,8 +49,9 @@ export default function Brands() {
           </h2>
           
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            We partner with world-renowned manufacturers and suppliers to bring you 
-            the highest quality construction materials and equipment.
+            We collaborate with trusted global manufacturers to deliver reliable industrial tools,
+             safety products, fasteners, and construction supplies used by professionals across the
+              region.
           </p>
         </div>
 
@@ -35,12 +60,12 @@ export default function Brands() {
           {brands.map((brand, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-xl p-6 flex items-center justify-center h-32 hover:shadow-lg transition-all duration-300 group"
+              className="bg-white rounded-xl p-4 flex items-center justify-center h-32 hover:shadow-lg transition-all duration-300 group"
             >
               <img
-                src="image.png"
+                src={brand.logo}
                 alt={brand.name}
-                className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-h-20 md:max-h-24 object-contain grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-300"
               />
             </div>
           ))}
@@ -50,7 +75,7 @@ export default function Brands() {
         <div className="mt-16 text-center">
           <div className="bg-yellow-400 rounded-2xl p-8 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
-              Want to Become a Partner?
+              Need products from a specific manufacturer?
             </h2>
             <p className="text-black mb-6 max-w-2xl mx-auto">
               Join our network of trusted brands and reach thousands of construction professionals across the region.

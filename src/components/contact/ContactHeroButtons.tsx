@@ -1,7 +1,7 @@
 export default function ContactHeroButton(){
     return(
-        <div className="min-h-screen sm:grid sm:grid-cols-1 sm:align-middle flex items-center bg-cover bg-center gap-8 relative z-10 justify-center mt-10">
-            <div className="group w-[250px] h-[320px] p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col items-center gap-4 hover:border-yellow-400/60 transition ease-in">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10 mt-10 w-full max-w-6xl mx-auto ">
+            <div className="group w-full h-[320px] p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col items-center gap-4 hover:border-yellow-400/60 transition ease-in">
                 <img 
                 src="/Call.png"
                 alt= "Call Us"
@@ -17,7 +17,7 @@ export default function ContactHeroButton(){
                     +1 (555) 123-4567
                 </p>
             </div>
-            <div className="group w-[250px] h-[320px] p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col h-[320px] items-center gap-4 hover:border-yellow-400/60 transition ease-in">
+            <div className="group w-full h-[320px] p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col h-[320px] items-center gap-4 hover:border-yellow-400/60 transition ease-in">
                 <img 
                 src="/mail.png"
                 alt= "Mail Us"
@@ -33,7 +33,7 @@ export default function ContactHeroButton(){
                     sample@buildon.com
                 </p>
             </div>
-            <div className="group w-[250px] p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col h-[320px] items-center gap-4 hover:border-yellow-400/60 transition ease-in">
+            <div className="group w-full p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col h-[320px] items-center gap-4 hover:border-yellow-400/60 transition ease-in">
                 <img 
                 src="/web.png"
                 alt= "Visit Website"
@@ -49,7 +49,7 @@ export default function ContactHeroButton(){
                     www.buildon.com
                 </p>
             </div>
-            <div className="group w-[250px] p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col h-[320px] items-center gap-4 hover:border-yellow-400/60 transition ease-in">
+            <div className="group w-full p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col h-[320px] items-center gap-4 hover:border-yellow-400/60 transition ease-in">
                 <img 
                 src="/calendar.png"
                 alt= "Schedule meeting"

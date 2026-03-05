@@ -18,7 +18,6 @@ export default function Home() {
       <Services />
       <ProductCategories />
       <Brands />
-      {/* <Projects /> */}
       <CTASection />
       <Footer />
     </main>
