@@ -1,13 +1,16 @@
 "use client";
 import { useState,useMemo } from "react";
+import { useSearchParams } from "next/navigation";
 import { products } from "@/data/products";
 import ProductGrid from "./ProductGrid";
 import ProductsToolbar from "./ProductToolbar";
 import ProductList from "./ProductList";
 
 export default function ProductContainer(){
+    const SearchParams = useSearchParams();
+    const categoryFormUrl = (SearchParams.get("category"))
     const [search,setSearch] = useState(""); // search query state
-    const [category,setCategory] = useState("All"); // category filter state
+    const [category,setCategory] = useState(categoryFormUrl||"All"); // category filter state
     const [filterBrand,setFilterBrand] = useState(""); // brand filter state
     const [gridView,setGridView] = useState(true); //view toggle state
     const filteredProducts = useMemo(()=>{

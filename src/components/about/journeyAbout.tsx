@@ -2,28 +2,28 @@ export default function JourneyAbout() {
   const milestones = [
     {
       year: "2015",
-      title: "Foundation",
-      description: "BUILDON began with a simple vision: to bridge the gap between quality construction materials and businesses that need them."
+      title: "Company Founded",
+      description: "BUILDON was established in UAE focusing on construction materials and industrial supply trading."
     },
     {
       year: "2018",
-      title: "Expansion",
-      description: "Grew from a small trading firm to a comprehensive solutions provider with operations across multiple countries."
+      title: "Regional Expansion",
+      description: "Expanded supply network across GCC markets and established partnerships with major manufacturers."
     },
     {
       year: "2020",
-      title: "Innovation",
-      description: "Launched digital trading platform and expanded services to include specialized trading solutions."
+      title: "Product Diversification",
+      description: "Introduced safety equipment, fasteners, power tools, and packing materials to serve industrial clients."
     },
     {
       year: "2024",
-      title: "Global Leadership",
-      description: "Established as trusted partner for thousands of businesses across UAE, China, and GCC countries."
+      title: "Trusted Global Supplier",
+      description: "Serving contractors, factories, and distributors with reliable sourcing and logistics support."
     }
   ]
 
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section id="journey" className="py-16 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -73,7 +73,7 @@ export default function JourneyAbout() {
               Your success is our success story.
             </p>
             <button className="bg-black text-yellow-400 px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-800 transition-colors">
-              Partner With Us
+              Request a Quote
             </button>
           </div>
         </div>

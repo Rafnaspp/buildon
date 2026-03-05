@@ -82,10 +82,10 @@ export default function Navbar() {
             <a href="/products" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
               Products
             </a>
-            <a href="#gallery" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
+            <a href="/gallery" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
               Gallery
             </a>
-            <a href="#contact" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
+            <a href="/contact" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
               Contact
             </a>
             <div className="pt-2">

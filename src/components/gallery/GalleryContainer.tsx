@@ -6,7 +6,7 @@ import GalleryToolbar from "./GalleryToolbar";
 import GalleryList from "./GalleryList";
 
 export default function GalleryContainer(){
-    const [type,setType] = useState("All"); // category filter state
+    const [type,setType] = useState("all"); // category filter state
     const [gridView,setGridView] = useState(true); //view toggle state
     const filteredGallery = useMemo(()=>{
         return galleryImages.filter((gallery)=>{

@@ -1,26 +1,26 @@
 export default function MissionAbout() {
   const missionFeatures = [
-    {
-      title: "Quality First",
-      description: "We never compromise on quality. Every product we source and deliver meets the highest international standards.",
-      icon: "✨"
-    },
-    {
-      title: "Customer Success",
-      description: "Your success is our success. We go above and beyond to ensure our clients achieve their business goals.",
-      icon: "🎯"
-    },
-    {
-      title: "Global Reach",
-      description: "With operations across UAE, China, and GCC countries, we connect businesses worldwide seamlessly.",
-      icon: "🌍"
-    },
-    {
-      title: "Innovation",
-      description: "We continuously evolve our trading solutions to meet the changing needs of the global market.",
-      icon: "💡"
-    }
-  ]
+  {
+    title: "Reliable Materials",
+    description: "We supply high-quality construction materials, safety equipment, and industrial tools trusted by contractors and businesses.",
+    icon: "🛠️"
+  },
+  {
+    title: "Contractor Support",
+    description: "We work closely with contractors and companies to ensure they receive the right materials at the right time.",
+    icon: "🤝"
+  },
+  {
+    title: "Global Sourcing",
+    description: "Our international supplier network allows us to source high-quality products from trusted manufacturers worldwide.",
+    icon: "🌍"
+  },
+  {
+    title: "Efficient Supply",
+    description: "Fast logistics and dependable delivery ensure our clients can keep their projects moving without delays.",
+    icon: "🚚"
+  }
+]
 
   return (
     <section className="py-16 lg:py-24 bg-gray-50">
@@ -32,8 +32,8 @@ export default function MissionAbout() {
           </h2>
           
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            To be the trusted bridge between quality construction materials and the businesses that build our future, 
-            delivering excellence in every trade, every time.
+            Our mission is to provide reliable construction materials, safety products,
+             and industrial tools that empower contractors, manufacturers, and builders to deliver projects efficiently and safely.
           </p>
         </div>
 

@@ -1,5 +1,6 @@
+'use client';
 import Link from "next/link"
-
+import { useState } from "react";
 export default function ProductCategories() {
   const categories = [
   {
@@ -21,7 +22,7 @@ export default function ProductCategories() {
     tags: ["Industrial Packaging", "Protection", "Shipping"]
   },
   {
-    title: "Silicone & Sealants",
+    title: "Silicon & Sealants",
     description: "Industrial grade silicone and sealing solutions for construction and maintenance.",
     image: "/images/Category/silicon.png",
     tags: ["Sealants", "Adhesives", "Construction"]
@@ -57,7 +58,7 @@ export default function ProductCategories() {
     tags: ["Locks", "Hinges", "Door Hardware"]
   }
 ]
-
+  const [category,setCategory] = useState("All");
   return (
     <section className="py-16 lg:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -117,9 +118,11 @@ export default function ProductCategories() {
                 
                 {/* Button */}
                 <div className="mt-auto pt-4">
+                <Link href={`/products?category=${encodeURIComponent(category.title)}`}>
                 <button className="w-full bg-yellow-400 text-black font-semibold py-2 px-4 rounded-lg hover:bg-yellow-300 transition-colors">
                   View Products
                 </button>
+                </Link>
                 </div>
               </div>
             </div>

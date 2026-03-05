@@ -1,6 +1,6 @@
 export default function ContactHeroButton(){
     return(
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10 mt-10 w-full max-w-6xl mx-auto ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 relative z-10 mt-6  md:mt-10 w-full max-w-6xl mx-auto pb-10">
             <div className="group w-full h-[320px] p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col items-center gap-4 hover:border-yellow-400/60 transition ease-in">
                 <img 
                 src="/Call.png"
@@ -14,7 +14,7 @@ export default function ContactHeroButton(){
                     Speak with our experts
                 </p>
                 <p className="text-yellow-400">
-                    +1 (555) 123-4567
+                    +967 56 269 6505
                 </p>
             </div>
             <div className="group w-full h-[320px] p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col h-[320px] items-center gap-4 hover:border-yellow-400/60 transition ease-in">
@@ -30,7 +30,7 @@ export default function ContactHeroButton(){
                     Get detailed responses
                 </p>
                 <p className="text-yellow-400">
-                    sample@buildon.com
+                    info@buildontradinglls.com
                 </p>
             </div>
             <div className="group w-full p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col h-[320px] items-center gap-4 hover:border-yellow-400/60 transition ease-in">
@@ -46,7 +46,7 @@ export default function ContactHeroButton(){
                     Explore our online presence
                 </p>
                 <p className="text-yellow-400">
-                    www.buildon.com
+                    www.buildontradingllc.com
                 </p>
             </div>
             <div className="group w-full p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col h-[320px] items-center gap-4 hover:border-yellow-400/60 transition ease-in">
