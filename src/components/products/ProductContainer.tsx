@@ -26,7 +26,7 @@ export default function ProductContainer(){
 
     return (
         <>
-            <section className="max-w-7xl mx-auto py-16 px-6">
+            <section className="w-full mx-auto py-16 px-6">
             <div className="flex justify-center gap-4 pointer-events-auto overflow-x-auto">
             <ProductsToolbar 
             search={search}

@@ -10,16 +10,6 @@ export const categories = [
   'Lockings & Hinges'
 ]
 
-export const brands = [
-  'Bosch',
-  'DeWalt',
-  'Stanley',
-  'Makita',
-  '3M',
-  'Honeywell',
-  'Ingco',
-  'Total Tools'
-]
 
 export const products = [
   // Safety Products

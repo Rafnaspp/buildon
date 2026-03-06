@@ -1,3 +1,6 @@
+import { Phone } from "lucide-react";
+import Link from "next/link";
+
 interface Product {
     slug: string;
     title: string;
@@ -33,9 +36,14 @@ export default function ProductList({ products }: ProductListProps){
                         <div className="p-4 flex-1">
                           <h2 className="text-lg font-extrabold text-font-heading">{product.title}</h2>
                           <p className="text-font-body mb-4">{product.description}</p>
-                          <button className="mt-4 w-full md:w-auto bg-yellow-400 text-black font-semibold py-2 px-4 rounded-lg hover:bg-yellow-300 transition-colors">
-                            Available Now
+                          <Link href="tel:+971 56 269 6505">
+                          <button className="mt-4  w-full md:w-aut py-2 px-4 border border-gray-300 rounded-2xl font-extralight hover:outline-2 hover:bg-gray-100 hover:outline-yellow-400 hover:border-yellow-400
+                            hover:text-yellow-400 transition-all ease-in">
+                            <div className="flex justify-center items-center gap-4">
+                            <Phone/> Call for Quote
+                            </div>
                           </button>
+                          </Link>
                         </div>
                     </div>
                 ))}

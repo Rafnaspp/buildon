@@ -1,10 +1,12 @@
 'use client';
-import { Clock, Facebook, FileBadge, Globe, Headset, Instagram, Link, Mail, MapPinHouse, Phone, Truck } from "lucide-react";
+import { Clock, Facebook, FileBadge, Globe, Headset, Instagram, Mail, MapPinHouse, Phone, Truck } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 interface Options {
     value:string;
     label:string;
 }
+// function to handle form data after submit
 const handleSubmit = async(e)=>{
     e.preventDefault();
     try{
@@ -46,6 +48,7 @@ export default function ContactBody(){
     ];
     return(
         <section className="py-16 md:py-20 px-4 md:px-6  bg-gray-100">
+            {/* Form */}
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-start">
                 <div className="bg-white p-10 rounded-2xl shadow-lg">
                     <h2 className="text-3xl font-bold mb-3 text-black">Send us a message</h2>
@@ -87,6 +90,7 @@ export default function ContactBody(){
                           
                         </form>
                     </div>
+                    {/* Contact Details */}
                     <div className="space-y-8">
                         <div>
                             <h2 className="text-3xl font-bold mb-2 text-black">Get In Touch</h2>
@@ -97,17 +101,26 @@ export default function ContactBody(){
                         <div className="bg-white p-8 rounded-2xl shadow-md space-y-3">
                             <h3 className="text-xl font-semibold text-black">Our Office</h3>
                             <h4 className="font-semibold text-black">Builton Headquarters</h4>
-                            <p className="text-gray-600"><MapPinHouse />Media City, Al Massaned, Sharjah</p>
-                            <p className="text-gray-600"><Phone/>+971 56 269 6505</p>
-                            <p className="text-gray-600"><Mail />info@buildontradingllc.com</p>
-                            <a href="www.buildontradinglls.com"><p className="text-gray-600"><Globe />www.buildontradingllc.com</p></a>
-                            <p className="text-gray-600"><Clock />9:00 - 17:00</p>
+                            <Link href="https://www.google.com/maps?q=Media+City,AL+Massaned,Sharjah">
+                            <p className="text-gray-600 hover:text-yellow-400 transition-all ease-in hover:translate-x-1"><MapPinHouse />Media City, Al Massaned, Sharjah</p>
+                            </Link>
+                            <Link href="tel:+971 56 269 6505">
+                            <p className="text-gray-600 hover:text-yellow-400 transition-all ease-in hover:translate-x-1"><Phone/>+971 56 269 6505</p>
+                            </Link>
+                            <Link href="mailto:info@buildontradingllc.com">
+                            <p className="text-gray-600 hover:text-yellow-400 transition-all ease-in hover:translate-x-1"><Mail />info@buildontradingllc.com</p>
+                            </Link>
+                            <Link href="www.buildontradinglls.com "><p className="text-gray-600 hover:text-yellow-400 transition-all ease-in hover:translate-x-1"><Globe />www.buildontradingllc.com</p></Link>
+                            <Link href="https://www.google.com/maps?q=Media+City,AL+Massaned,Sharjah">
+                            <p className="text-gray-600 hover:text-yellow-400 transition-all ease-in hover:translate-x-1"><Clock />9:00 - 17:00</p>
+                            </Link>
                             {/* Google Maps Embed */}
                             <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.1490212054373!2d55.41953117621071!3d25.29919682756029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5f64d5696e7f%3A0xe51568072150e336!2sMEDIA%20CITY!5e0!3m2!1sen!2sin!4v1772644633951!5m2!1sen!2sin" 
                                 className="w-full h-full border-0" loading="lazy" ></iframe>
                             </div>
                         </div>
+                        {/* Badges and Why choose buildon section */}
                         <div className="bg-white p-8 rounded-2xl shadow-md space-y-4">
                             <h3 className="text-xl font-semibold text-black">Why Choose Buildon</h3>
                             <div className="bg-gray-100 p-4 group rounded-xl hover:border hover:border-yellow-400  hover:-translate-y-1 transition ease-in flex items-center  space-x-4">
@@ -143,17 +156,17 @@ export default function ContactBody(){
                         <div className="bg-white p-8 rounded-2xl shadow-md">
                             <h3 className="text-xl font-semibold mb-4 ">Follow Us</h3>
                             <div className="flex gap-4">
-                                <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold">
+                                <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold hover:bg-gray-100 hover:text-yellow-400 hover:outline-1 hover:outline-yellow-400 transition-all ease-in hover:translate-x-1">
                                     <Facebook />
                                 </div>
-                            <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold">
+                            <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold hover:bg-gray-100 hover:text-yellow-400 hover:outline-1 hover:outline-yellow-400 transition-all ease-in hover:translate-x-1">
                                     <Instagram />
                             </div>
-                            <a href="https://www.buildontradingllc.com">
-                            <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold">
+                            <Link href="https://www.buildontradingllc.com">
+                            <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold hover:bg-gray-100 hover:text-yellow-400 hover:outline-1 hover:outline-yellow-400 transition-all ease-in hover:translate-x-1">
                                     <Globe />
                             </div>
-                            </a>
+                            </Link>
                             </div>
                         </div>
                     </div>
