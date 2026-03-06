@@ -45,11 +45,13 @@ export default function Navbar() {
           </div>
 
           {/* CTA Button */}
+          <Link href="/contact">
           <div className="hidden md:block">
             <button className="bg-primary text-black px-6 py-2 rounded-md text-sm font-semibold hover:bg-yellow-400 transition-colors">
-              Start Trading
+              Get Quote
             </button>
           </div>
+          </Link>
 
           {/* Mobile menu button */}
           <div className="md:hidden">

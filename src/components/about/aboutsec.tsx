@@ -32,9 +32,11 @@ export default function AboutPageSec() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
+                                <Link href="/contact">
                                 <button className="bg-yellow-400 text-black px-8 py-4 rounded-md text-lg font-semibold hover:bg-yellow-300 transition-all transform hover:scale-105">
                                     Request a Quote
                                 </button>
+                                </Link>
                                 <Link href="/products">
                                 <button className="border border-black text-black px-8 py-4 rounded-md text-lg font-semibold hover:bg-black hover:text-white transition-colors">
                                     View Products
@@ -45,19 +47,14 @@ export default function AboutPageSec() {
 
                         {/* Right Column - Image/Video */}
                         <div className="relative">
-                            <div className="aspect-square bg-gradient-to-br from-yellow-400/10 to-transparent rounded-2xl border border-yellow-400/30 overflow-hidden">
-                                <div className="w-full h-full flex items-center justify-center relative z-10">
-                                    <div className="text-center">
-                                        <div className="w-32 h-32 bg-yellow-400 rounded-full mx-auto mb-6 flex items-center justify-center">
-                                            <span className="text-black text-4xl font-bold">B</span>
-                                        </div>
-                                        <h3 className="text-2xl font-bold text-black mb-4">BUILDON</h3>
-                                        <p className="text-gray-700 px-8">
-                                            Trusted by Contractors Across the UAE
-                                        </p>
-                                    </div>
+                            {/* <div className="aspect-square bg-gradient-to-br overflow-hidden"> */}
+                                <div className="w-full h-full flex items-center justify-center rounded-lg relative z-10">
+                                    <img
+                                    src="/images/about/banner.jpg"
+                                    className='w-full'
+                                    />
                                 </div>
-                            </div>
+                            {/* </div> */}
                         </div>
                     </div>
                 </div>

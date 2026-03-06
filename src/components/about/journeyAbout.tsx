@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function JourneyAbout() {
   const milestones = [
     {
@@ -72,9 +74,11 @@ export default function JourneyAbout() {
               Join us as we continue to grow and innovate in the global trading industry.
               Your success is our success story.
             </p>
+            <Link href="/contact">
             <button className="bg-black text-yellow-400 px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-800 transition-colors">
               Request a Quote
             </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import Image from "next/image"
 export default function About() {
   return (
     <section id="about" className="py-16 lg:py-24 bg-section-alt text-text-body">
@@ -50,10 +51,10 @@ export default function About() {
               <div className="w-full h-full flex items-center justify-center">
                 <div className="text-center">
                   <div className="w-20 h-20 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <svg className="w-10 h-10 text-text-heading" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+                    <Image
+                      src="/images/about/banner.jpg"
+                      fill
+                      />
                   </div>
                   <p className="text-text-body">BUILDON Product & Safety Solutions</p>
                 </div>

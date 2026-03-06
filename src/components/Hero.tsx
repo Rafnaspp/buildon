@@ -65,7 +65,7 @@ export default function Hero() {
   return (
     <>
       {/* Top Contact Bar Section */}
-      <section className="bg-yellow-400 backdrop-blur-sm border-b border-border">
+      {/* <section className="bg-yellow-400 backdrop-blur-sm border-b border-border">
         <div className="max-w-7xl mx-auto px-8 py-2">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center">
@@ -96,7 +96,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Navbar Section */}
       <Navbar />

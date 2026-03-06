@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Brands() {
   const brands = [
     { name: "Dewalt", logo: "/images/brands/dewalt.png" },
@@ -12,8 +14,8 @@ export default function Brands() {
     { name: "Araldite", logo: "/images/brands/araldite.png" },
     { name: "National paints", logo: "/images/brands/national_pains.png" },
     { name: "Pidilite", logo: "/images/brands/pidilite.png" },
-    { name: "Insize", logo: "/images/brands/dewalt.png" },
-    { name: "Mitutoyo", logo: "/images/brands/makita.png" },
+    { name: "Insize", logo: "/images/brands/insize.png" },
+    { name: "Mitutoyo", logo: "/images/brands/mitutoyo.png" },
     { name: "Dormer", logo: "/images/brands/dormer.png" },
     { name: "WD-40", logo: "/images/brands/wd-40.png" },
     { name: "RR Kabel", logo: "/images/brands/rr_kabel.png" },
@@ -81,12 +83,16 @@ export default function Brands() {
               Join our network of trusted brands and reach thousands of construction professionals across the region.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-black text-yellow-400 px-8 py-3 rounded-md text-lg font-semibold hover:bg-gray-800 transition-colors">
+            <Link href="/contact">
+              <button className="bg-black text-yellow-400 px-8 py-3 rounded-md text-lg font-semibold hover:bg-yellow-400 hover:text-black hover:shadow-xl hover:ring-1 hover:ring-black transition-colors ease-in">
                 Become a Partner
               </button>
-              <button className="bg-white text-black px-8 py-3 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors">
+              </Link>
+              <Link href="/products">
+              <button className="bg-white text-black px-8 py-3 rounded-md text-lg font-semibold hover:bg-black hover:text-white hover:ring-1 hover:ring-white transition-colors ease-in">
                 View All Brands
               </button>
+              </Link>
             </div>
           </div>
         </div>

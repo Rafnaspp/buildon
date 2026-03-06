@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from 'next/image'
 
 export default function StoryAbout() {
@@ -63,9 +64,11 @@ export default function StoryAbout() {
               Looking for reliable construction materials, safety products,
               or industrial tools? Our team is ready to support your project.   
             </p>
+            <Link href="/contact">
             <button className="bg-black text-yellow-400 px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-800 transition-colors">
               Request a Quote
             </button>
+            </Link>
           </div>
         </div>
       </div>
