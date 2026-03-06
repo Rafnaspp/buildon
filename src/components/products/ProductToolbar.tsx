@@ -1,5 +1,5 @@
 'use client'
-import { brands ,categories} from "@/data/products";
+import {categories} from "@/data/products";
 import { Search , LayoutGrid, List } from "lucide-react";
 interface ProductsToolbarProps {
     search: string;
@@ -15,8 +15,8 @@ interface ProductsToolbarProps {
 export default function ProductsToolbar({
     search,
     setSearch,
-    filterBrand,
-    setFilterBrand,
+    // filterBrand,
+    // setFilterBrand,
     category,
     setCategory,
     gridView,
@@ -25,10 +25,10 @@ export default function ProductsToolbar({
     return (
         <>
         {/* toolbar grid container */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full px-8 py-6 mb-8">
+        <div className="grid grid-cols-1 gap-4 w-full px-8 py-6 mb-8 isolate-auto ">
             {/* first row: search + filter  */}
-            <div className="md:col-span-3">
-                <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
+            <div className="md:col-span-3 absolute-fix">
+                <div className="flex flex-col md:flex-row md:items-center md:space-x-4 sticky top-20 z-20">
                     <div className="relative w-full lg:w-2/3 xl:w-1/2">
                         <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></Search>
                         <input
@@ -39,7 +39,7 @@ export default function ProductsToolbar({
                             className="w-full pl-12 pr-4 py-4 border rounded-lg text-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition ease-in"
                         />
                     </div>
-                    <select
+                    {/* <select
                         value={filterBrand}
                         onChange={(e)=>setFilterBrand(e.target.value)}
                         className="mt-4 md:mt-0 w-full md:w-1/4 border rounded-lg px-4 py-2"
@@ -50,7 +50,7 @@ export default function ProductsToolbar({
                                 {brand}
                             </option>
                         ))}
-                    </select>
+                    </select> */}
                     <button className={`px-3 py-2 rounded-lg hidden md:block ${gridView ? 'bg-primary text-white' : 'bg-gray-200 text-gray-800'}transition ease-in`} onClick={()=>setGridView(true)}><LayoutGrid/></button>
                     <button className={`px-3 py-2 rounded-lg hidden md:block ${gridView ? 'bg-gray-200 text-gray-800' : 'bg-primary text-white'}`} onClick={()=>setGridView(false)}><List/></button>
                 </div>
@@ -58,7 +58,7 @@ export default function ProductsToolbar({
 
             {/* second row: category buttons across grid */}
             <div className="md:col-span-3 w-full h-full">
-                <div className="flex flex-col gap-8 md:flex-row justify-between items-start md:items-center border-y-2 border-x-0 border-gray-100 p-8 w-full ">
+                <div className="flex flex-col gap-8 md:flex-row justify-between items-start md:items-center   p-8 w-full ">
                     <div className="flex gap-3 flex-wrap">
                 <button onClick={()=>setCategory("All")}
                 className={`min-w-[140px] whitespace-nowrap px-4 py-2 rounded-full ${
