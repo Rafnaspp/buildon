@@ -9,7 +9,7 @@ export default function AboutPageSec() {
 
 
             {/* Hero Section */}
-            <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-yellow-400/20 to-white">
+            <section className="pt-32 md:pt-0 relative min-h-screen flex items-center justify-center bg-gradient-to-br from-yellow-400/20 to-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Left Column - Content */}

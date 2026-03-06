@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function ServicesAbout() {
   const services = [
     {
@@ -79,9 +81,11 @@ export default function ServicesAbout() {
             <p className="text-black mb-6 max-w-2xl mx-auto">
               Let's discuss your specific requirements and create a tailored solution for your business needs.
             </p>
+            <Link href="/contact">
             <button className="bg-black text-yellow-400 px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-800 transition-colors">
               Get Custom Quote
             </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function MissionAbout() {
   const missionFeatures = [
   {
@@ -79,9 +81,11 @@ export default function MissionAbout() {
             <p className="text-black mb-6 max-w-2xl mx-auto">
               Partner with us and be part of a mission that's building a better future through quality and excellence.
             </p>
+            <Link href="/contact">
             <button className="bg-black text-yellow-400 px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-800 transition-colors">
               Work With Us
             </button>
+            </Link> 
           </div>
         </div>
       </div>

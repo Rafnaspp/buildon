@@ -5,7 +5,7 @@ import AboutPageSec from '@/components/about/aboutsec'
 import JourneyAbout from '@/components/about/journeyAbout'
 import StoryAbout from '@/components/about/storyAbout'
 import MissionAbout from '@/components/about/missionAbout'
-
+import ServicesAbout from '@/components/about/servicesAbout'
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white text-black">
@@ -16,7 +16,7 @@ export default function AboutPage() {
       <StoryAbout />
       <JourneyAbout />
       <MissionAbout />
-      
+      <ServicesAbout/>
       <Footer />
     </div>
   )
