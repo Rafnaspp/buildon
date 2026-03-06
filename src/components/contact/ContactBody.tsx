@@ -110,7 +110,7 @@ export default function ContactBody(){
                             <Link href="mailto:info@buildontradingllc.com">
                             <p className="text-gray-600 hover:text-yellow-400 transition-all ease-in hover:translate-x-1"><Mail />info@buildontradingllc.com</p>
                             </Link>
-                            <Link href="www.buildontradinglls.com "><p className="text-gray-600 hover:text-yellow-400 transition-all ease-in hover:translate-x-1"><Globe />www.buildontradingllc.com</p></Link>
+                            <Link href="https://www.buildontradingllc.com "><p className="text-gray-600 hover:text-yellow-400 transition-all ease-in hover:translate-x-1"><Globe />www.buildontradingllc.com</p></Link>
                             <Link href="https://www.google.com/maps?q=Media+City,AL+Massaned,Sharjah">
                             <p className="text-gray-600 hover:text-yellow-400 transition-all ease-in hover:translate-x-1"><Clock />9:00 - 17:00</p>
                             </Link>

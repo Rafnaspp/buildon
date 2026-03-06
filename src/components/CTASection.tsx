@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function CTASection() {
   return (
     <section className="py-16 lg:py-24 bg-background text-text-body overflow-hidden">
@@ -26,6 +28,7 @@ export default function CTASection() {
 
         {/* Contact Info */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <Link href="tel:+971 56 269 6505">
           <div className="text-center">
             <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
               <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -35,7 +38,8 @@ export default function CTASection() {
             <h3 className="text-2xl font-bold text-text-heading mb-2">Call Us</h3>
             <p className="text-text-secondary">+971 56 269 6505</p>
           </div>
-
+          </Link>
+          <Link href="mailto:info@buildontradingllc.com">
           <div className="text-center">
             <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
               <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -45,8 +49,9 @@ export default function CTASection() {
             <h3 className="font-bold text-xl text-text-heading mb-2">Email Us</h3>
             <p className="text-text-body">info@buildontradingllc.com</p>
           </div>
-
-          <div className="text-center">
+          </Link>
+          <Link href="https://www.google.com/maps?q=Media+City,AL+Massaned,Sharjah">
+          <div className="text-center group hover:text-yell">
             <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
               <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -56,6 +61,7 @@ export default function CTASection() {
             <h3 className="text-xl font-bold text-text-heading mb-2">Visit Us</h3>
             <p className="text-text-secondary">Media City<br />Al Massaned, Sharjah</p>
           </div>
+          </Link>
         </div>
 
         {/* CTA Buttons */}

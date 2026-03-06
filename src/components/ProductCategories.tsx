@@ -22,7 +22,7 @@ export default function ProductCategories() {
     tags: ["Industrial Packaging", "Protection", "Shipping"]
   },
   {
-    title: "Silicon & Sealants",
+    title: "Silicone & Sealants",
     description: "Industrial grade silicone and sealing solutions for construction and maintenance.",
     image: "/images/Category/silicon.png",
     tags: ["Sealants", "Adhesives", "Construction"]
