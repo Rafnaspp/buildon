@@ -25,7 +25,7 @@ export default function Footer() {
               and construction professionals.
             </p>
             {/* Social section */}
-            <div className='flex space-x-4'>
+            <div className='flex space-x-4 mb-2'>
               <a key = "facebook"
               href="#"
               className='w-10 h-10 rounded-full bg-section-alt border border-border flex items-center justify-center hover:bg-primary hover:text-text-heading transition-colors'
