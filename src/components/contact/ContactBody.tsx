@@ -7,25 +7,26 @@ interface Options {
     label:string;
 }
 // function to handle form data after submit includes google sheet link
-const handleSubmit = async(e)=>{
+const handleSubmit = async(e:React.FormEvent<HTMLFormElement>)=>{
     e.preventDefault();
+    const formData = new FormData(e.currentTarget);
     try{
         const res = await fetch("https://script.google.com/macros/s/AKfycbwv7GWiw7MvgX59AGX0bpUDnkR8ZgYBqSfRxOnDckSCMUn-wrB3u1eFZ-wv2rkGjg-E/exec",{
             method:"POST",    
             body:JSON.stringify({
-                name:e.target.name.value,
-                email:e.target.email.value,
-                phone:e.target.phone.value,
-                company:e.target.company.value,
-                service:e.target.service.value,
-                message:e.target.message.value
+                name: formData.get('name'),
+                email : formData.get('email'),
+                phone : formData.get('phone'),
+                company : formData.get('compant'),
+                service : formData.get('service'),
+                message : formData.get('message')
         }),
     }
     )
         const data = await res.json();
         if(data.status === "success"){
             alert("Message sent successfully!");
-            e.target.reset();
+            e.currentTarget.reset();
         }else{
             alert("Failed to send message. Please try again.");
     }

@@ -2,7 +2,7 @@ interface Gallery { // Define the Product interface to specify the structure of 
     id: number;
   title: string;
   description: string;
-  type: 'product' | 'material' | 'equipment' | 'installation' | 'project';
+  type: string;
   location: string;
   alt: string;
 }

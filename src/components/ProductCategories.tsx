@@ -7,55 +7,73 @@ export default function ProductCategories() {
     title: "Safety Products",
     description: "Personal protective equipment designed for industrial and construction safety.",
     image: "/images/Category/safety_products.png",
-    tags: ["Shoes", "Gloves", "Vests", "Helmets"]
+    tags: ["Shoes", "Gloves", "Vests", "Helmets"],
+    badge: "Featured",
+    badgeColor: "bg-red-800"
   },
   {
     title: "Fasteners",
     description: "High-strength fastening components for construction and industrial applications.",
     image: "/images/Category/fastners.png",
-    tags: ["Bolts", "Nuts", "Rivets", "Threaded Rods"]
+    tags: ["Bolts", "Nuts", "Rivets", "Threaded Rods"],
+    badge: "Best Seller",
+    badgeColor: "bg-blue-800"
   },
   {
     title: "Packing Materials",
     description: "Reliable packaging materials for industrial transport and protection.",
     image: "/images/Category/packing_materials.png",
-    tags: ["Industrial Packaging", "Protection", "Shipping"]
+    tags: ["Industrial Packaging", "Protection", "Shipping"],
+    badge: "High Demand",
+    badgeColor: "bg-green-800"
   },
   {
     title: "Silicone & Sealants",
     description: "Industrial grade silicone and sealing solutions for construction and maintenance.",
     image: "/images/Category/silicon.png",
-    tags: ["Sealants", "Adhesives", "Construction"]
+    tags: ["Sealants", "Adhesives", "Construction"],
+    badge: "Top Quality",
+    badgeColor: "bg-purple-800"
   },
   {
     title: "Abrasives",
     description: "Grinding, polishing and finishing abrasives for professional applications.",
     image: "/images/Category/abbrasives.png",
-    tags: ["Grinding", "Polishing", "Sanding"]
+    tags: ["Grinding", "Polishing", "Sanding"],
+    badge: "Professional",
+    badgeColor: "bg-orange-700"
   },
   {
     title: "Drill Bits & Router Bits",
     description: "Precision cutting tools for drilling and routing operations.",
     image: "/images/Category/drill_bits.png",
-    tags: ["Drill Bits", "Router Bits", "Metal Cutting"]
+    tags: ["Drill Bits", "Router Bits", "Metal Cutting"],
+    badge: "Precision Tools",
+    badgeColor: "bg-indigo-800"
   },
   {
     title: "Hand Tools",
     description: "Durable professional hand tools for construction and maintenance.",
     image: "/images/Category/hand_tools.png",
-    tags: ["Wrenches", "Screwdrivers", "Hammers"]
+    tags: ["Wrenches", "Screwdrivers", "Hammers"],
+    badge: "Reliable",
+    badgeColor: "bg-yellow-700"
   },
   {
     title: "Power Tools",
     description: "High-performance electric and cordless tools for industrial work.",
     image: "/images/Category/power_tools.png",
-    tags: ["Drills", "Grinders", "Cutters"]
+    tags: ["Drills", "Grinders", "Cutters"],
+    badge: "Heavy Duty",
+    badgeColor: "bg-gray-800"
   },
   {
     title: "Lockings & Hinges",
     description: "Secure locking systems and hinges for industrial and construction use.",
     image: "/images/Category/lockings.png",
-    tags: ["Locks", "Hinges", "Door Hardware"]
+    tags: ["Locks", "Hinges", "Door Hardware"],
+    badge: "Secure",
+    badgeColor: "bg-teal-800"
   }
 ]
   const [category,setCategory] = useState("All");
