@@ -2,7 +2,7 @@ export interface GalleryImage {
   id: number;
   title: string;
   description: string;
-  type: 'product' | 'material' | 'equipment' | 'installation' | 'project';
+  type: string;
   location: string;
   alt: string;
 }
@@ -32,14 +32,14 @@ export const galleryImages: GalleryImage[] = [
     location: '/images/gallery/distribution.webp',
     alt: 'Hero banner image',
   },
-  {
-    id: 4,
-    title: 'Team Management & Planning',
-    description: 'Buildon team coordinating project planning and material distribution strategies',
-    type: 'Team & Operations',
-    location: '/images/gallery/team.webp',
-    alt: 'Product showcase',
-  },
+  // {
+  //   id: 4,
+  //   title: 'Team Management & Planning',
+  //   description: 'Buildon team coordinating project planning and material distribution strategies',
+  //   type: 'Team & Operations',
+  //   location: '/images/gallery/team.webp',
+  //   alt: 'Product showcase',
+  // },
   {
     id: 5,
     title: 'Industrial Equipment Handling',

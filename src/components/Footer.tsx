@@ -27,24 +27,19 @@ export default function Footer() {
             {/* Social section */}
             <div className='flex space-x-4 mb-2'>
               <a key = "facebook"
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61583686745058"
               className='w-10 h-10 rounded-full bg-section-alt border border-border flex items-center justify-center hover:bg-primary hover:text-text-heading transition-colors'
               ><Facebook /></a>
               <a key = "Instagram"
-              href="#"
+              href="https://www.instagram.com/buildon_ae?igsh=dDFqZHI2MXJkaG9r&utm_source=qr"
               className='w-10 h-10 rounded-full bg-section-alt border border-border flex items-center justify-center hover:bg-primary hover:text-text-heading transition-colors'
               >
               <Instagram /></a>
               <a key = "LinkedIn"
-              href="#"
+              href="https://www.linkedin.com/company/buildon-trading-llc/"
               className='w-10 h-10 rounded-full bg-section-alt border border-border flex items-center justify-center hover:bg-primary hover:text-text-heading transition-colors'
               >
               <Linkedin /></a>
-              <a key = "twitter"
-              href="#"
-              className='w-10 h-10 rounded-full bg-section-alt border border-border flex items-center justify-center hover:bg-primary hover:text-text-heading transition-colors'
-              >
-              <Twitter /></a>
               
             </div>
             
