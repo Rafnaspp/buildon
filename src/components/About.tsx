@@ -52,10 +52,12 @@ export default function About() {
                 <div className="text-center">
                   <div className="w-20 h-20 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
                     <Image
-                      src="/images/about/banner.jpg"
+                      src="/images/about/banner.png"
                       alt="Banner Image"
                       fill
+                      className="rounded-lg"
                       />
+                      <div className='absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent'></div>
                   </div>
                   <p className="text-text-body">BUILDON Product & Safety Solutions</p>
                 </div>
