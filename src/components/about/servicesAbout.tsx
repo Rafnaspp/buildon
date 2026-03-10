@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function ServicesAbout() {
   const services = [
     {
@@ -54,9 +56,8 @@ export default function ServicesAbout() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <div
-              key={index}
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group"
             >
               {/* Icon */}
@@ -80,9 +81,11 @@ export default function ServicesAbout() {
             <p className="text-black mb-6 max-w-2xl mx-auto">
               Let's discuss your specific requirements and create a tailored solution for your business needs.
             </p>
+            <Link href="/contact">
             <button className="bg-black text-yellow-400 px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-800 transition-colors">
               Get Custom Quote
             </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -2,25 +2,27 @@
 import Image from 'next/image'
 import Navbar from './Navbar'
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
+// The differennt hero variations to cycle through
 const heroVariations = [
   {
-    heading: "EXPORT-IMPORT",
-    subheading: "China to GCC Solutions",
-    description: "Direct sourcing from China to GCC countries with quality assurance",
-    tagline: "Bridging Quality. Connecting Markets."
+    heading: "INDUSTRIAL SAFETY",
+    subheading: "Professional Protection Equipments",
+    description: "Premium safety gear, helmets, gloves, goggles and protective equipment designed for construction and industrial environments.",
+    tagline: "Strength You Can Build On."
   },
   {
-    heading: "PREMIUM QUALITY",
-    subheading: "Building Materials Excellence", 
-    description: "Discover our comprehensive range of premium construction materials",
-    tagline: "Where Innovation Meets Precision"
+    heading: "POWER TOOLS",
+    subheading: "Reliable Industrial Performance", 
+    description: "High-performance power tools and industrial equipment built for durability, efficiency and precision.",
+    tagline: "Built for Professionals."
   },
   {
-    heading: "METAL SOLUTIONS",
-    subheading: "Industrial Grade Materials",
-    description: "High-quality steel, aluminum, and specialty metals", 
-    tagline: "Strength. Durability. Performance."
+    heading: "CONSTRUCTION SUPPLIES",
+    subheading: "Complete Worksite Solutions",
+    description: "From safety gear to heavy-duty tools, we provide everything required for modern construction and industrial operations.", 
+    tagline: "Quality. Safety. Reliability."
   }
 ]
 
@@ -54,7 +56,7 @@ export default function Hero() {
     const interval = setInterval(() => {
       setIsTypingComplete(false)
       setVariationIndex((prevIndex) => (prevIndex + 1) % heroVariations.length)
-    }, 5000) // Change every 5 seconds
+    }, 6000) // Change every 6 seconds
 
     return () => clearInterval(interval)
   }, [])
@@ -63,7 +65,7 @@ export default function Hero() {
   return (
     <>
       {/* Top Contact Bar Section */}
-      <section className="bg-yellow-400 backdrop-blur-sm border-b border-border">
+      {/* <section className="bg-yellow-400 backdrop-blur-sm border-b border-border">
         <div className="max-w-7xl mx-auto px-8 py-2">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center">
@@ -77,7 +79,7 @@ export default function Hero() {
                 <svg className="w-4 h-4 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                info@buildon.com
+                info@buildontradingllc.com
               </span>
             </div>
             <div className="flex items-center space-x-4">
@@ -94,7 +96,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Navbar Section */}
       <Navbar />
@@ -103,7 +105,7 @@ export default function Hero() {
       <section className="relative min-h-screen flex items-center justify-center">
         <div className="absolute inset-0">
           <Image 
-            src="/hero.png" 
+            src="/images/hero/hero.png" 
             alt="Hero background" 
             fill
             className="object-cover"
@@ -117,16 +119,16 @@ export default function Hero() {
           {/* Tags */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             <span className="bg-primary text-black text-xs font-medium px-3 py-1 rounded-full">
-              Leading Construction Materials Supplier
+              Industrial Safety Equipment
             </span>
             <span className="bg-primary text-black text-xs font-medium px-3 py-1 rounded-full">
-              UAE: Sharjah Media City (SHAMS)
+              Professional Power Tools
             </span>
             <span className="bg-primary text-black text-xs font-medium px-3 py-1 rounded-full">
-              China: Yiwu City, Zhejiang Province
+              Construction & Industrial Supplies
             </span>
             <span className="bg-primary text-black text-xs font-medium px-3 py-1 rounded-full">
-              Export-Import China to GCC
+              Trusted Quality Products
             </span>
           </div>
 
@@ -150,9 +152,11 @@ export default function Hero() {
           </p>
 
           {/* CTA Button */}
-          <button className="bg-primary text-text-heading px-8 py-4 rounded-md text-lg font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105 shadow-lg">
-            Explore Catalog
-          </button>
+          <Link href="/products">
+            <button className="bg-primary text-text-heading px-8 py-4 rounded-md text-lg font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105 shadow-lg">
+              View Product Catalogue
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -176,21 +180,21 @@ export default function Hero() {
             </div>
             
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="text-4xl font-bold text-black mb-2">5000+</div>
-              <div className="text-black font-semibold">HAPPY CLIENTS</div>
+              <div className="text-4xl font-bold text-black mb-2">1000+</div>
+              <div className="text-black font-semibold">INDUSTRIAL CLIENTS</div>
               <div className="text-black text-sm mt-2">Satisfied customers worldwide</div>
             </div>
             
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="text-4xl font-bold text-black mb-2">10000+</div>
-              <div className="text-black font-semibold">PRODUCTS</div>
+              <div className="text-4xl font-bold text-black mb-2">500+</div>
+              <div className="text-black font-semibold">SAFETY & INDUSTRIAL PRODUCTS</div>
               <div className="text-black text-sm mt-2">Premium quality items</div>
             </div>
             
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <div className="text-4xl font-bold text-black mb-2">24/7</div>
-              <div className="text-black font-semibold">SUPPORT</div>
-              <div className="text-black text-sm mt-2">Round-the-clock assistance</div>
+              <div className="text-4xl font-bold text-black mb-2">GLOBAL</div>
+              <div className="text-black font-semibold">SUPPLY</div>
+              <div className="text-black text-sm mt-2">Serving construction & industrial sectors</div>
             </div>
           </div>
         </div>

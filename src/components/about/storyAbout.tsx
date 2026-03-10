@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from 'next/image'
 
 export default function StoryAbout() {
@@ -11,8 +12,8 @@ export default function StoryAbout() {
           </h2>
           
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            From humble beginnings to global leadership, discover the journey that shaped BUILDON 
-            into the trusted trading partner we are today.
+            From humble beginnings to becoming a trusted supplier of safety products,
+             tools, fasteners, and construction materials, discover the journey that shaped BUILDON.
           </p>
         </div>
 
@@ -25,24 +26,26 @@ export default function StoryAbout() {
             </h3>
             
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              BUILDON Trading LLC was founded in 2008 with a simple yet ambitious vision: 
-              to become the most trusted name in construction materials across the region. 
-              What started as a small trading company in Dubai has grown into a comprehensive 
-              solution provider serving thousands of clients across 20+ countries.
+              BUILDON Building Materials Trading LLC was established with the goal of
+              supplying reliable construction materials, safety equipment, fasteners,
+              and industrial tools to contractors and businesses. Starting as a small
+              supplier, the company steadily built a reputation for dependable products
+              and strong customer relationships.
             </p>
             
             <p className="text-lg text-gray-700 leading-relaxed">
-              Our journey has been marked by continuous innovation, unwavering commitment to quality, 
-              and an absolute dedication to customer satisfaction. Today, we stand as a testament 
-              to what's possible when expertise meets passion.
+              Today, BUILDON supports a wide range of construction and industrial
+              projects by providing quality materials, safety products, tools,
+              and hardware. Our focus remains on reliability, competitive pricing,
+              and delivering the right products when our customers need them.
             </p>
           </div>
           
           {/* Right Column - Image */}
           <div className="relative">
-            <div className="aspect-square rounded-2xl overflow-hidden">
+            <div className="relative aspect-square rounded-2xl overflow-hidden">
               <Image
-                src="/about-story.jpg"
+                src="/images/about/about.png"
                 alt="BUILDON Story"
                 fill
                 className="object-cover"
@@ -55,14 +58,17 @@ export default function StoryAbout() {
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-2xl p-8 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
-              Join Our Success Story
+              Work With BUILDON
             </h2>
             <p className="text-black mb-6 max-w-2xl mx-auto">
-              Be part of our continuing journey as we build the future of trading excellence.
+              Looking for reliable construction materials, safety products,
+              or industrial tools? Our team is ready to support your project.   
             </p>
+            <Link href="/contact">
             <button className="bg-black text-yellow-400 px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-800 transition-colors">
-              Partner With Us
+              Request a Quote
             </button>
+            </Link>
           </div>
         </div>
       </div>

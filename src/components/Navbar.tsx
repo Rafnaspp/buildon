@@ -1,5 +1,5 @@
 'use client'
-
+import Link from 'next/link'
 import { useState } from 'react'
 import Image from 'next/image'
 
@@ -26,30 +26,32 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a href="#home" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
+              <Link href="/" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
                 Home
-              </a>
-              <a href="#about" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
+              </Link>
+              <Link href="/about" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
                 About
-              </a>
-              <a href="#products" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
+              </Link>
+              <Link href="/products" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
                 Products
-              </a>
-              <a href="#gallery" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
+              </Link>
+              <Link href="/gallery" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
                 Gallery
-              </a>
-              <a href="#contact" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
+              </Link>
+              <Link href="/contact" className="text-black-300 hover:text-yellow-300 px-3 py-2 text-sm font-medium transition-colors">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
 
           {/* CTA Button */}
+          <Link href="/contact">
           <div className="hidden md:block">
             <button className="bg-primary text-black px-6 py-2 rounded-md text-sm font-semibold hover:bg-yellow-400 transition-colors">
-              Start Trading
+              Get Quote
             </button>
           </div>
+          </Link>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -73,19 +75,19 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-black border-t border-gray-800">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#home" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
+            <a href="/" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
               Home
             </a>
-            <a href="#about" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
+            <a href="/about" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
               About
             </a>
-            <a href="#products" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
+            <a href="/products" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
               Products
             </a>
-            <a href="#gallery" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
+            <a href="/gallery" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
               Gallery
             </a>
-            <a href="#contact" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
+            <a href="/contact" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">
               Contact
             </a>
             <div className="pt-2">

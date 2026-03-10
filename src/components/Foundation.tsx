@@ -1,38 +1,40 @@
+import Link from "next/link"
+
 export default function Foundation() {
   const stats = [
-    {
-      number: "98%",
-      title: "Quality Assured",
-      description: "Every product tested",
-      icon: (
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-      )
-    },
-    {
-      number: "5000+",
-      title: "Projects Completed",
-      description: "Across UAE and GCC",
-      icon: (
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h1v4h1m-1 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      )
-    },
-    {
-      number: "24/7",
-      title: "Fast Delivery",
-      description: "Across all emirates",
-      icon: (
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m-1 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      )
-    },
-    {
-      number: "15+",
-      title: "Years Experience",
-      description: "In construction industry",
-      icon: (
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a1 1 0 001 1h1m-6 0l9 9m0-9l-9 9m0-9h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      )
-    }
-  ]
+  {
+    number: "8+",
+    title: "Years Experience",
+    description: "Serving construction & industrial sectors",
+    icon: (
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+    )
+  },
+  {
+    number: "500+",
+    title: "Industrial Products",
+    description: "Safety equipment & professional tools",
+    icon: (
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h1v4h1m-1 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    )
+  },
+  {
+    number: "1000+",
+    title: "Trusted Clients",
+    description: "Contractors & industrial partners",
+    icon: (
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m-1 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    )
+  },
+  {
+    number: "Global",
+    title: "Supply Network",
+    description: "China to GCC distribution",
+    icon: (
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a1 1 0 001 1h1m-6 0l9 9m0-9l-9 9m0-9h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    )
+  }
+]
 
   return (
     <section className="py-16 lg:py-24 bg-white text-black">
@@ -40,30 +42,32 @@ export default function Foundation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="bg-yellow-400 rounded-2xl p-6 text-center border border-yellow-500">
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-            See why <span className="text-black">5000+</span> contractors and developers chose <span className="text-white">BUILDON</span> to build their projects
+            See why <span className="text-black">1000+</span> contractors and industrial buyers trust <span className="text-white">BUILDON</span> for safety equipment and professional tools
           </h2>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+            <Link href="/products">
             <button className="bg-white text-black px-8 py-3 rounded-md text-lg font-semibold hover:bg-yellow-500 transition-colors flex items-center">
-              GET QUOTE NOW
+              VIEW PRODUCT CATALOGUE
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </button>
+            </Link>
           </div>
-          
+          {/* Benefits List*/}
           <div className="flex flex-wrap justify-center gap-6 text-sm text-black">
             <div className="flex items-center">
               <svg className="w-4 h-4 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7m0 0h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              Fast Delivery Network
+              Reliable Global Supply
             </div>
             <div className="flex items-center">
               <svg className="w-4 h-4 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              Quality Guaranteed
+              Industrial Grade Quality
             </div>
           </div>
           
@@ -100,7 +104,7 @@ export default function Foundation() {
             </h3>
             
             <p className="text-text-secondary mb-6 leading-relaxed">
-              To provide premium quality construction materials and innovative solutions that empower builders to create exceptional structures across UAE and beyond.
+              To supply high-quality industrial safety equipment, professional tools, and construction products that support safe and efficient work environments across industrial and construction sectors.
             </p>
             
             <div className="space-y-3">
@@ -108,7 +112,7 @@ export default function Foundation() {
                 <svg className="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-text-heading">Premium quality materials</span>
+                <span className="text-text-heading">Industrial-grade safety products</span>
               </div>
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -135,7 +139,7 @@ export default function Foundation() {
             </h3>
             
             <p className="text-text-secondary mb-6 leading-relaxed">
-              To become the leading construction materials supplier in the region, known for excellence, reliability, and innovation in everything we deliver.
+              To become a trusted global supplier of industrial safety equipment, professional tools, and construction solutions known for reliability, quality, and long-term partnerships.
             </p>
             
             <div className="space-y-3">
@@ -163,7 +167,7 @@ export default function Foundation() {
             Our Impact in <span className="text-primary">Numbers</span>
           </h2>
           <p className="text-lg text-text-body">
-            Real results from real projects
+            Trusted by contractors and industrial professionals
           </p>
         </div>
 

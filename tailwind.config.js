@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#F4A300',
+        primaryHover: '#F5A400',
         background: '#FFFFFF',
         'section-alt': '#F8F8F8',
         text: {
@@ -32,7 +33,18 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
+      keyframes: {
+        moveGradient: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
+      },
+      animation: {
+        gradient: 'moveGradient 3s ease infinite',
+      },
     },
   },
   plugins: [],
 }
+
