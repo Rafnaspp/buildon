@@ -6,10 +6,6 @@ interface Product {
     title: string;
     category: string;
     description: string;
-    price: number;
-    features: string[];
-    brand: string;
-    tags: string[];
     image: string;
 }
 

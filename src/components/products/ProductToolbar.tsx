@@ -4,8 +4,8 @@ import { Search , LayoutGrid, List } from "lucide-react";
 interface ProductsToolbarProps {
     search: string;
     setSearch: (value: string) => void;
-    filterBrand: string;
-    setFilterBrand: (value: string) => void;
+    // filterBrand: string;
+    // setFilterBrand: (value: string) => void;
     category: string;
     setCategory: (value: string) => void;
     gridView: boolean;

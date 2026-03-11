@@ -25,8 +25,13 @@ const heroVariations = [
     tagline: "Quality. Safety. Reliability."
   }
 ]
+// TypingText props
+type TypingTextProps = {
+  text: string
+  className?: string
+}
 
-function TypingText({ text, className = "" }) {
+function TypingText({ text , className = "" }:TypingTextProps) {
   const [displayedText, setDisplayedText] = useState("")
   const [currentIndex, setCurrentIndex] = useState(0)
 

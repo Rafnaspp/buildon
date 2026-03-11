@@ -11,7 +11,7 @@ export default function ProductContainer(){
     const categoryFormUrl = (SearchParams.get("category"))
     const [search,setSearch] = useState(""); // search query state
     const [category,setCategory] = useState(categoryFormUrl||"All"); // category filter state
-    const [filterBrand,setFilterBrand] = useState(""); // brand filter state
+    // const [filterBrand,setFilterBrand] = useState(""); // brand filter state
     const [gridView,setGridView] = useState(true); //view toggle state
     const filteredProducts = useMemo(()=>{
         return products.filter((product)=>{
@@ -19,10 +19,9 @@ export default function ProductContainer(){
             || product.description.toLowerCase().includes(search.toLowerCase());
 
             const matchesCategory = category === "All" || product.category === category;
-            const matchesBrand = !filterBrand || product.brand === filterBrand;
-            return matchesSearch && matchesCategory && matchesBrand; //All filters must match for product to be included
+            return matchesSearch && matchesCategory; //All filters must match for product to be included
         });
-    },[search,category,filterBrand]);
+    },[search,category]);
 
     return (
         <>
@@ -31,8 +30,6 @@ export default function ProductContainer(){
             <ProductsToolbar 
             search={search}
             setSearch={setSearch}
-            filterBrand={filterBrand}
-            setFilterBrand={setFilterBrand}
             category={category}
             setCategory={setCategory}
             gridView={gridView}

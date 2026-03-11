@@ -53,6 +53,7 @@ export default function About() {
                   <div className="w-20 h-20 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
                     <Image
                       src="/images/about/banner.jpg"
+                      alt="Banner Image"
                       fill
                       />
                   </div>

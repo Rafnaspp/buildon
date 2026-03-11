@@ -1,31 +1,32 @@
 'use client';
-import { Clock, Facebook, FileBadge, Globe, Headset, Instagram, Mail, MapPinHouse, Phone, Truck } from "lucide-react";
+import { Clock, Facebook, FileBadge, Globe, Headset, Instagram, Linkedin, Mail, MapPinHouse, Phone, Truck } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 interface Options {
     value:string;
     label:string;
 }
-// function to handle form data after submit
-const handleSubmit = async(e)=>{
+// function to handle form data after submit includes google sheet link
+const handleSubmit = async(e:React.FormEvent<HTMLFormElement>)=>{
     e.preventDefault();
+    const formData = new FormData(e.currentTarget);
     try{
         const res = await fetch("https://script.google.com/macros/s/AKfycbwv7GWiw7MvgX59AGX0bpUDnkR8ZgYBqSfRxOnDckSCMUn-wrB3u1eFZ-wv2rkGjg-E/exec",{
             method:"POST",    
             body:JSON.stringify({
-                name:e.target.name.value,
-                email:e.target.email.value,
-                phone:e.target.phone.value,
-                company:e.target.company.value,
-                service:e.target.service.value,
-                message:e.target.message.value
+                name: formData.get('name'),
+                email : formData.get('email'),
+                phone : formData.get('phone'),
+                company : formData.get('compant'),
+                service : formData.get('service'),
+                message : formData.get('message')
         }),
     }
     )
         const data = await res.json();
         if(data.status === "success"){
             alert("Message sent successfully!");
-            e.target.reset();
+            e.currentTarget.reset();
         }else{
             alert("Failed to send message. Please try again.");
     }
@@ -156,17 +157,26 @@ export default function ContactBody(){
                         <div className="bg-white p-8 rounded-2xl shadow-md">
                             <h3 className="text-xl font-semibold mb-4 ">Follow Us</h3>
                             <div className="flex gap-4">
+                                <Link href="https://www.instagram.com/buildon_ae?igsh=dDFqZHI2MXJkaG9r&utm_source=qr">
                                 <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold hover:bg-gray-100 hover:text-yellow-400 hover:outline-1 hover:outline-yellow-400 transition-all ease-in hover:translate-x-1">
                                     <Facebook />
                                 </div>
-                            <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold hover:bg-gray-100 hover:text-yellow-400 hover:outline-1 hover:outline-yellow-400 transition-all ease-in hover:translate-x-1">
-                                    <Instagram />
-                            </div>
-                            <Link href="https://www.buildontradingllc.com">
-                            <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold hover:bg-gray-100 hover:text-yellow-400 hover:outline-1 hover:outline-yellow-400 transition-all ease-in hover:translate-x-1">
-                                    <Globe />
-                            </div>
-                            </Link>
+                                </Link>
+                                <Link href="https://www.facebook.com/profile.php?id=61583686745058">
+                                <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold hover:bg-gray-100 hover:text-yellow-400 hover:outline-1 hover:outline-yellow-400 transition-all ease-in hover:translate-x-1">
+                                        <Instagram />
+                                </div>
+                                </Link>
+                                <Link href="https://www.buildontradingllc.com">
+                                <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold hover:bg-gray-100 hover:text-yellow-400 hover:outline-1 hover:outline-yellow-400 transition-all ease-in hover:translate-x-1">
+                                        <Globe />
+                                </div>
+                                </Link>
+                                <Link href ="https://www.linkedin.com/company/buildon-trading-llc/">
+                                <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold hover:bg-gray-100 hover:text-yellow-400 hover:outline-1 hover:outline-yellow-400 transition-all ease-in hover:translate-x-1">
+                                    <Linkedin/>
+                                </div>
+                                </Link>
                             </div>
                         </div>
                     </div>
