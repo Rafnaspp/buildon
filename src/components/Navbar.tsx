@@ -16,8 +16,8 @@ export default function Navbar() {
               <Image 
                 src="/buldon.png" 
                 alt="BUILDON Logo" 
-                width={122} 
-                height={162}
+                width={140} 
+                height={180}
                 className="mr-3"
               />
             </div>
