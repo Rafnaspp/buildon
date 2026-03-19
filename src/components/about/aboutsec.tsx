@@ -50,9 +50,10 @@ export default function AboutPageSec() {
                             {/* <div className="aspect-square bg-gradient-to-br overflow-hidden"> */}
                                 <div className="w-full h-full flex items-center justify-center rounded-lg relative z-10">
                                     <img
-                                    src="/images/about/banner.jpg"
-                                    className='w-full'
+                                    src="/images/about/banner.png"
+                                    className='w-full rounded-lg'
                                     />
+                                    <div className='absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent'></div>
                                 </div>
                             {/* </div> */}
                         </div>

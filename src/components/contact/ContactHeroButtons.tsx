@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function ContactHeroButton(){
     return(
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 relative z-10 mt-6  md:mt-10 w-full max-w-6xl mx-auto pb-10">
-            <a href="tel:++967 56 269 6505">
+            <a href="tel:+967 56 269 6505">
             <div className="group w-full h-[320px] p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/30 flex flex-col items-center gap-4 hover:border-yellow-400/60 transition ease-in">
                 <div className="bg-yellow-400 rounded-full w-12 h-12 flex items-center justify-center group-hover:rotate-12 transition ease-in">
                     <Phone className="w-8 h-8" />

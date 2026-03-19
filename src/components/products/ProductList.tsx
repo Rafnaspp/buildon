@@ -15,8 +15,8 @@ interface ProductListProps {
 
 export default function ProductList({ products }: ProductListProps){
     return (
-        <section className="py-16 bg-gray-50 p-6 relative" style={{ isolation: 'isolate' }}>
-            <div className="grid grid-cols-1 gap-8 max-w-7xl mx-auto px-6 relative z-20">
+        <section className="py-16 bg-gray-50 p-2 relative" style={{ isolation: 'isolate' }}>
+            <div className="grid grid-cols-1 gap-8 max-w-8xl mx-auto relative z-20">
                 {products.map((product) => (
                     <div 
                         key={product.slug} 
