@@ -7,6 +7,7 @@ import ProductCategories from '@/components/ProductCategories'
 import Brands from '@/components/Brands'
 import CTASection from '@/components/CTASection'
 import Footer from '@/components/Footer'
+import Review from '@/components/Review'
 
 export default function Home() {
   return (
@@ -17,9 +18,11 @@ export default function Home() {
       <WhyChooseUs />
       <Services />
       <ProductCategories />
+      <Review/>
       <Brands />
       <CTASection />
       <Footer />
+
     </main>
   )
 }
