@@ -11,9 +11,9 @@ export default function Review(){
                 Clients Say</span>
             </div>
             {/* Cards */}
-            <div className="flex gap-8 max-w-6xl">
+            <div className="flex gap-8 w-full overflow-x-auto px-4">
                 {userReviews.map((review)=>(
-                    <div className="bg-white flex flex-col gap-6 rounded-2xl max-w-5xl p-6  shadow-lg">
+                    <div className="bg-white flex flex-col gap-6 rounded-2xl w-[340px] sm:w-[380px] p-8 mb-4  flex-shrink-0 shadow-lg hover:scale-105 transition-all ease-in">
                         <div className="flex text-yellow-300">
                             {[...Array(review.stars)].map((_,i)=>(
                                 <Star key={i} className={`w-5 h-5 ${i<review.stars ? "fill-yellow-300 text-yellow-300" : "text-gray-300"}`} />
