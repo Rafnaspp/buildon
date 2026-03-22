@@ -103,7 +103,8 @@ export default function ContactBody(){
                             <h3 className="text-xl font-semibold text-black">Our Office</h3>
                             <h4 className="font-semibold text-black">Builton Headquarters</h4>
                             <Link href="https://www.google.com/maps?q=Media+City,AL+Massaned,Sharjah">
-                            <p className="text-gray-600 hover:text-yellow-400 transition-all ease-in hover:translate-x-1"><MapPinHouse />Media City, Al Massaned, Sharjah</p>
+                            <p className="text-gray-600 hover:text-yellow-400 transition-all ease-in hover:translate-x-1"><MapPinHouse />Media City, Al Massaned, Sharjah,</p>
+                            <p className="text-gray-600 hover:text-yellow-400 transition-all ease-in hover:translate-x-1">83FX+Q25 Yiwu, Jinhua, Zhejiang, China</p>
                             </Link>
                             <Link href="tel:+971 56 269 6505">
                             <p className="text-gray-600 hover:text-yellow-400 transition-all ease-in hover:translate-x-1"><Phone/>+971 56 269 6505</p>
