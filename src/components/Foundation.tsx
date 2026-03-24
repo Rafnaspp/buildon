@@ -11,7 +11,7 @@ export default function Foundation() {
     )
   },
   {
-    number: "500+",
+    number: "2000+",
     title: "Industrial Products",
     description: "Safety equipment & professional tools",
     icon: (

@@ -98,7 +98,10 @@ export default function Footer() {
                 </svg>
                 <Link href="https://www.google.com/maps?q=Media+City,AL+Massaned,Sharjah">
                 <div className='group hover:text-primary'>
-                  <p className="text-text-secondary text-sm hover:text-primary hover:drop-shadow-lg transition-colors ease-in">Media City <br></br> Al Massaned, Sharjah</p>
+                  <p className="text-text-secondary text-sm hover:text-primary hover:drop-shadow-lg transition-colors ease-in">Media City <br></br> Al Massaned, Sharjah. </p>
+                </div>
+                <div className='group hover:text-primary'>
+                  <p className="text-text-secondary text-sm hover:text-primary hover:drop-shadow-lg transition-colors ease-in">83FX+Q25 Yiwu, <br></br>  Jinhua, Zhejiang, China</p>
                 </div>
                 </Link>
               </div>
